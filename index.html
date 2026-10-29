@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nuru's portfolio — thoughtful digital experiences, built with clarity and care." />
+    <meta name="theme-color" content="#102a2a" />
+    <title>Nuru — Digital craft, made human</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nuru home"><span class="brand-mark">N</span><span>nuru<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#signal">Live signal</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Digital designer &amp; front-end developer</p>
+          <h1>Making the <em>complex</em><br />feel <span class="outline-word">clear.</span></h1>
+          <p class="hero-intro">I’m Nuru, a web creative turning sharp ideas into warm, useful experiences for people and the teams building for them.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#projects">See selected work <span>↘</span></a><a class="text-link" href="#about">A little more about me <span>↓</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="Abstract portrait illustration" role="img">
+          <div class="sun-disc"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="portrait-shape"><div class="portrait-hair"></div><div class="portrait-face"></div><div class="portrait-shirt"></div><span class="portrait-eye"></span></div><div class="art-tag tag-top">curious / precise</div><div class="art-tag tag-bottom">Nairobi · 2026</div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span>Scroll to explore</span><span class="scroll-line"></span></div>
+      </section>
+
+      <section id="about" class="about section-shell section-pad">
+        <div class="section-label"><span>01</span><span class="label-rule"></span><span>About</span></div>
+        <div class="about-grid"><div><h2>Good work lives<br />between <span>logic</span><br />and feeling.</h2></div><div class="about-copy"><p class="lead">I care about the part where a rough idea becomes something someone can actually use — a rhythm, a system, a small moment of delight.</p><p>My practice sits at the intersection of visual design, front-end craft, and close attention to the people on the other side of the screen. I’m currently studying Web Technologies and Internet Applications at KCA University.</p><div class="skill-list"><span>01 / Strategy</span><span>02 / Interface design</span><span>03 / Front-end build</span><span>04 / Motion &amp; prototyping</span></div></div></div>
+      </section>
+
+      <section id="projects" class="projects section-shell section-pad">
+        <div class="section-heading"><div class="section-label"><span>02</span><span class="label-rule"></span><span>Selected work</span></div><p>Small selection, big attention to detail.</p></div>
+        <div class="project-list">
+          <article class="project-card project-feature"><div class="project-visual visual-civic"><img src="assets/civic.svg" alt="Abstract teal and coral civic dashboard interface" loading="lazy" width="900" height="620" /><span class="project-number">01</span></div><div class="project-meta"><div><h3>Civic / 01</h3><p>A clearer way to find your way around city services.</p></div><span class="project-type">UX · Product</span></div></article>
+          <article class="project-card project-offset"><div class="project-visual visual-kiln"><img src="assets/kiln.svg" alt="Abstract terracotta illustration for Kiln journal" loading="lazy" width="900" height="620" /><span class="project-number">02</span></div><div class="project-meta"><div><h3>Kiln Journal</h3><p>Stories of making, edited with a human touch.</p></div><span class="project-type">Editorial · Web</span></div></article>
+          <article class="project-card project-small"><div class="project-visual visual-soko"><img src="assets/soko.svg" alt="Abstract lime and navy marketplace interface" loading="lazy" width="900" height="620" /><span class="project-number">03</span></div><div class="project-meta"><div><h3>Soko / Market</h3><p>A brighter toolkit for independent makers.</p></div><span class="project-type">Brand · Build</span></div></article>
+        </div>
+      </section>
+
+      <section id="signal" class="signal section-shell section-pad"><div class="signal-panel"><div class="signal-copy"><div class="section-label light"><span>03</span><span class="label-rule"></span><span>Live signal</span></div><h2>A little perspective,<br /><span>fresh from the web.</span></h2><p>This quote is fetched live on every visit from a public, key-free API. No secrets, just a small moment of perspective.</p><button id="refresh-quote" class="button button-light" type="button">New perspective <span>↻</span></button></div><div class="quote-card" aria-live="polite" aria-busy="true"><span class="quote-mark">“</span><p id="quote-text">Finding a fresh thought…</p><div class="quote-footer"><span id="quote-author">Loading the signal</span><span class="quote-status"><i></i><span id="quote-status-text">Fetching now</span></span></div></div></div></section>
+
+      <section id="contact" class="contact section-shell section-pad"><div class="section-label"><span>04</span><span class="label-rule"></span><span>Contact</span></div><div class="contact-grid"><div><h2>Have a good<br /><span>question?</span></h2><p class="contact-note">For thoughtful projects, curious collaborations, or just a hello.</p><a class="email-link" href="mailto:hello@nuru.studio">hello@nuru.studio <span>↗</span></a></div><form id="contact-form" class="contact-form"><label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" required /></label><label for="email">Email address<input id="email" name="email" type="email" autocomplete="email" required /></label><label for="message">What’s on your mind?<textarea id="message" name="message" rows="4" required></textarea></label><button class="button button-dark" type="submit">Send a note <span>↗</span></button><p id="form-feedback" class="form-feedback" role="status"></p></form></div></section>
+    </main>
+    <footer class="site-footer section-shell"><a class="brand" href="#top"><span class="brand-mark">N</span><span>nuru<span class="brand-dot">.</span></span></a><p>Built with care · 2026</p><a href="#top" class="back-top">Back to top ↑</a></footer>
+  </body>
+</html>
